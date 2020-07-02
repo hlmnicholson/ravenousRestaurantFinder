@@ -1,13 +1,9 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React from 'react';
 import './BusinessList.css';
+
 import Business from '../Business/Business.js';
 
-class BusinessList extends Component {
-  static propTypes = {
-    prop: PropTypes
-  }
-
+class BusinessList extends React.Component {
   render() {
     return (
       <div className="BusinessList">
@@ -17,7 +13,7 @@ class BusinessList extends Component {
           })
         }
       </div>
-    )
+    );
   }
 }
 
